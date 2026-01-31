@@ -9,7 +9,6 @@ fig_path  = '../figs/'
 
 files = [
     'CCI_chl-rename_v6.0-mon_global_1998-2024_1deg_timmean.nc4',
-
     'chl_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_timmean_fixed.nc',
     'chl_CanESM5_hist_1988-2014_1deg_surf_timmean_fixed.nc',
     'chl_CanESM5-1_hist_1988-2014_1deg_surf_timmean_fixed.nc',
@@ -142,7 +141,7 @@ plt.suptitle('Chlorophyll Climatology of CMIP6 Models (1988–2014)',
 
 plt.tight_layout(rect=[0, 0, 0.9, 0.93])
 
-plt.savefig(fig_path + 'chl_clim_shravani.png', dpi=300)
+plt.savefig(fig_path + 'Chlorophyll_climatology.png', dpi=300)
 plt.show()
 
 
