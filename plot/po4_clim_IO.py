@@ -9,26 +9,26 @@ fig_path  = '../figs/new/'
 
 files = [
 
-    'po4_ACCESS-ESM1-5_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_CESM2_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_CESM2-FV2_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_CESM2-WACCM_hist_1955-2012_1deg_surf_timmean.nc', 
-    'po4_CESM2-WACCM-FV2_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_CMCC-ESM2_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_CMCC-ESM2_hist_1955-2012_1deg_surf_timmean.nc', #CNRM-ESM2-1
-    'po4_GFDL-CM4_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_GFDL-ESM4_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_GFDL-ESM4_hist_1955-2012_1deg_surf_timmean.nc', #IITM-ESM
-    'po4_IPSL-CM5A2-INCA_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_IPSL-CM6A-LR_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_IPSL-CM6A-LR-INCA_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_IPSL-CM6A-LR-INCA_hist_1955-2012_1deg_surf_timmean.nc', #MIROC-ES2L
-    'po4_MPI-ESM-1-2-HAM_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_MPI-ESM1-2-HR_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_MPI-ESM1-2-LR_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc', #NorESM2-LM
-    'po4_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc',
-    'po4_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc' #UKESM1-0-LL
+    'po4_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_CESM2-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc', 
+    'po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc', #CNRM-ESM2-1
+    'po4_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    #'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc', #IITM-ESM
+    'po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc', #MIROC-ES2L
+    'po4_MPI-ESM-1-2-HAM_hist_11988-2014_1deg_surf_IO_timmean.nc',
+    'po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4os_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc', #NorESM2-LM
+    'po4_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'po4_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc' #UKESM1-0-LL
 ]
 
 labels = [
@@ -42,7 +42,7 @@ labels = [
     'CNRM-ESM2-1',
     'GFDL-CM4',
     'GFDL-ESM4',
-    'IITM-ESM',
+    #'IITM-ESM',
     'IPSL-CM5A2-INCA',
     'IPSL-CM6A-LR',
     'IPSL-CM6A-LR-INCA',
