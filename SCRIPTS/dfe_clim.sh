@@ -1,0 +1,65 @@
+#!/bin/bash
+set -xe
+
+CDO="cdo -O -P 8"
+
+ipath="../../clean/dfe"
+opath="../data/climatology/dfe"
+
+#CanESM5 and CanESM5-1 absent
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfeos_ACCESS-ESM1-5_*surf.nc \
+       $opath/dfeos_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CESM2_*surf.nc \
+        $opath/dfe_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CESM2-FV2_*surf.nc \
+        $opath/dfe_CESM2-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CESM2-WACCM_*surf.nc \
+        $opath/dfe_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CESM2-WACCM-FV2_*surf.nc \
+         $opath/dfe_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CMCC-ESM2_*surf.nc \
+        $opath/dfe_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CNRM-ESM2-1_*surf.nc \
+        $opath/dfe_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_GFDL-CM4_*surf.nc \
+        $opath/dfe_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc
+        
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_GFDL-ESM4_*surf.nc \
+        $opath/dfe_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_IPSL-CM5A2-INCA_*surf.nc \
+        $opath/dfe_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_IPSL-CM6A-LR_*surf.nc \
+        $opath/dfe_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_IPSL-CM6A-LR-INCA_*surf.nc \
+         $opath/dfe_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_MIROC-ES2L_*surf.nc \
+        $opath/dfe_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_MPI-ESM-1-2-HAM_*surf.nc \
+         $opath/dfe_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_MPI-ESM1-2-HR_*surf.nc \
+         $opath/dfe_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_MPI-ESM1-2-LR_*surf.nc \
+          $opath/dfe_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_NorESM2-MM_*surf.nc \
+          $opath/dfe_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfeos_NorESM2-LM_*.nc \
+          $opath/dfeos_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_UKESM1-0-LL_*surf.nc \
+          $opath/dfe_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc
