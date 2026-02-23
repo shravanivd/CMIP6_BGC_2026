@@ -3,39 +3,61 @@ set -xe
 
 CDO="cdo -O -P 8"
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/ACCESS-ESM1-5/o2_*surf.nc ../data/climatology/o2/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_timmean.nc
+ipath="../../clean/DO"
+opath="../data/climatology/DO"
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/CanESM5/o2_*surf.nc ../data/climatology/o2/o2_CanESM5_hist_1988-2014_1deg_surf_timmean.nc
+#All CESM2 models absent
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_ACCESS-ESM1-5_*surf.nc \
+       opath/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/CanESM5-1/o2_*surf.nc ../data/climatology/o2/o2_CanESM5-1_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_CanESM5_*surf.nc \
+         opath/o2_CanESM5_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/CMCC-ESM2/o2_*surf.nc ../data/climatology/o2/o2_CMCC-ESM2_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_CanESM5-1_*surf.nc \
+          opath/o2_CanESM5-1_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/GFDL-CM4/o2_*surf.nc ../data/climatology/o2/o2_GFDL-CM4_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_CMCC-ESM2_*surf.nc \
+           opath/o2_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/GFDL-ESM4/o2_*surf.nc ../data/climatology/o2/o2_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_CNRM-ESM2-1_*surf.nc \
+           opath/o2_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/IPSL-CM5A2-INCA/o2_*surf.nc ../data/climatology/o2/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_GFDL-CM4_*surf.nc \
+           opath/o2_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/IPSL-CM6A-LR/o2_*surf.nc ../data/climatology/o2/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_GFDL-ESM4_*surf.nc \
+            opath/o2_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/IPSL-CM6A-LR-INCA/o2_*surf.nc ../data/climatology/o2/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_IPSL-CM5A2-INCA_*surf.nc \
+            opath/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/MPI-ESM-1-2-HAM/o2_*surf.nc ../data/climatology/o2/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_IPSL-CM6A-LR_*surf.nc \
+            opath/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/MPI-ESM1-2-HR/o2_*surf.nc ../data/climatology/o2/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_IPSL-CM6A-LR-INCA_*surf.nc \
+            opath/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/MPI-ESM1-2-LR/o2_*surf.nc ../data/climatology/o2/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_MIROC-ES2L_*surf.nc \
+             opath/o2_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/NorESM2-MM/o2_*surf.nc ../data/climatology/o2/o2_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_MPI-ESM-1-2-HAM_*surf.nc \
+            opath/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-#$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/CNRM-ESM2-1/o2_*surf.nc ../data/climatology/o2/o2_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_MPI-ESM1-2-HR_*surf.nc \
+            opath/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-#$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/MIROC-ES2L/o2_*surf.nc ../data/climatology/o2/o2_MIROC-ES2L_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_MPI-ESM1-2-LR_*surf.nc \
+            opath/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-#$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/NorESM2-LM/o2os_*surf.nc ../data/climatology/o2/o2os_NorESM2-LM_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2os_NorESM2-LM_*surf.nc \
+            opath/o2os_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-#$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ../../clean/o2/UKESM1-0-LL/o2_*surf.nc ../data/climatology/o2/o2_UKESM1-0-LL_hist_1988-2014_1deg_surf_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_NorESM2-MM_*surf.nc \
+            opath/o2_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
+
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 ipath/o2_UKESM1-0-LL_*surf.nc \
+            opath/o2_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc
+
 
 
 
