@@ -28,16 +28,16 @@ $CDO -sellevidx,1 $ipath/si/clean/si_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg.nc $i
 $CDO -sellevidx,1/32 $ipath/si/clean/si_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg.nc $ipath/si/clean/si_IPSL-CM6A-LR-INCA_hist_1950-2014_0-300.nc
 rm $ipath/si/clean/si_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg.nc
 
-$CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/si/raw/NorESM2-MM/si_Omon_NorESM2-MM_historical*.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
-$CDO -sellevidx,1 $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg_surf.nc
-$CDO -sellevidx,1/ $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_0-300.nc
-rm $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
+#$CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/si/raw/NorESM2-MM/si_Omon_NorESM2-MM_historical*.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
+#$CDO -sellevidx,1 $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg_surf.nc
+#$CDO -sellevidx,1/ $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_0-300.nc
+#rm $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
 
 #temp and sal
-$CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/thetao/raw/NorESM2-LM/thetao_Omon_NorESM2-LM_historical*.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc
-$CDO -sellevidx,1 $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg_surf.nc
-$CDO -sellevidx,1/ $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_0-300.nc
-rm $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc
+#$CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/thetao/raw/NorESM2-LM/thetao_Omon_NorESM2-LM_historical*.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc
+#$CDO -sellevidx,1 $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg_surf.nc
+#$CDO -sellevidx,1/ $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_0-300.nc
+#rm $ipath/thetao/clean/thetao_NorESM2-LM_hist_1950-2014_1deg.nc
 
 $CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/sal/raw/NorESM2-LM/so_Omon_NorESM2-LM_historical*.nc $ipath/sal/clean/so_NorESM2-LM_hist_1950-2014_1deg.nc
 $CDO -sellevidx,1 $ipath/sal/clean/so_NorESM2-LM_hist_1950-2014_1deg.nc $ipath/sal/clean/so_NorESM2-LM_hist_1950-2014_1deg_surf.nc
