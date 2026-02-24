@@ -30,7 +30,7 @@ rm $ipath/si/clean/si_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg.nc
 
 $CDO -remapbil,r360x180 -selyear,1950/2014 -mergetime $ipath/si/raw/NorESM2-MM/si_Omon_NorESM2-MM_historical*.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
 $CDO -sellevidx,1 $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg_surf.nc
-$CDO -sellevidx,1/ $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_0-300.nc
+$CDO -sellevidx,1/23 $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_0-300.nc
 rm $ipath/si/clean/si_NorESM2-MM_hist_1950-2014_1deg.nc
 
 #temp and sal
