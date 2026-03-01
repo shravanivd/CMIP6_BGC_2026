@@ -8,28 +8,26 @@ data_path = '../data/climatology/si/'
 fig_path  = '../figs/new/'
 
 files = [
-
-    'si_CESM2_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_CESM2-FV2_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_CESM2-WACCM_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_CESM2-WACCM-FV2_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_CMCC-ESM2_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_CMCC-ESM2_hist_1955-2012_1deg_surf_timmean.nc', #CNRM-ESM2-1
-    'si_GFDL-ESM4_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_GFDL-ESM4_hist_1955-2012_1deg_surf_timmean.nc', #IITM-ESM
-    'si_IPSL-CM5A2-INCA_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_IPSL-CM6A-LR_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_IPSL-CM6A-LR-INCA_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_MPI-ESM-1-2-HAM_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_MPI-ESM1-2-HR_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_MPI-ESM1-2-LR_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc', #NorESM2-LM
-    'si_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc',
-    'si_NorESM2-MM_hist_1955-2012_1deg_surf_timmean.nc' #UKESM1-0-LL
+    'si_CESM2_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_CESM2-FV2_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_CESM2-WACCM_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_CMCC-ESM2_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_CNRM-ESM2-1_hist_1988-2014_1deg_surf_timmean.nc', 
+    'si_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc',
+    #'si_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc', #IITM-ESM
+    'si_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_NorESM2-LM_hist_1988-2014_1deg_surf_timmean.nc', 
+    'si_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc',
+    'si_UKESM1-0-LL_hist_1988-2014_1deg_surf_timmean.nc' 
 ]
 
 labels = [
-
     'CESM2',
     'CESM2-FV2',
     'CESM2-WACCM',
@@ -37,7 +35,7 @@ labels = [
     'CMCC-ESM2',
     'CNRM-ESM2-1',
     'GFDL-ESM4',
-    'IITM-ESM',
+    #'IITM-ESM',
     'IPSL-CM5A2-INCA',
     'IPSL-CM6A-LR',
     'IPSL-CM6A-LR-INCA',
@@ -49,8 +47,6 @@ labels = [
     'UKESM1-0-LL'
 ]
 
-#bounds = [0.4, 0.8, 1.0, 1.2, 1.4, 1.6, 2.0, 3.0, 6.0, 10.0, 15.0]
-#bounds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
 bounds = [1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10]
 
 colors = [
@@ -78,9 +74,7 @@ fig, axes = plt.subplots(
 
 axes = axes.flatten()
 
-
 for i in range(nplots):
-
     ax = axes[i]
     filename = files[i]
 
@@ -95,7 +89,6 @@ for i in range(nplots):
         add_colorbar=False,
         transform=ccrs.PlateCarree()
     )
-
 
     ax.add_feature(cfeature.COASTLINE, linewidth=0.8)
     ax.add_feature(cfeature.LAND, facecolor='lightgrey')
@@ -129,5 +122,5 @@ plt.suptitle(
 )
 
 plt.tight_layout(rect=[0, 0, 0.9, 0.93])
-plt.savefig(fig_path + 'si_clim2.png', dpi=300)
+plt.savefig(fig_path + 'si_clim.png', dpi=300)
 plt.show()
