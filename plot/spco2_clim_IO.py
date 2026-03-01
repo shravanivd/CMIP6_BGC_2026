@@ -18,19 +18,19 @@ files = [
     'spco2_CESM2-WACCM_hist_1988-2014_1deg_IO_timmean.nc',
     'spco2_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_timmean.nc',
     'spco2_CMCC-ESM2_hist_1988-2014_1deg_IO_timmean.nc',
-    'spco2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_timmean.nc', #CNRM-ESM2-1
+    'spco2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_timmean.nc', 
     'spco2_GFDL-CM4_hist_1988-2014_1deg_IO_timmean.nc',
     'spco2_GFDL-ESM4_hist_1988-2014_1deg_IO_timmean.nc',
     #'spco2_GFDL-ESM4_hist_1988-2014_1deg_IO_timmean.nc', #IITM-ESM
-    'spco2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_timmean.nc', #IPSL-CM5A2-INCA ABSENT
+    'spco2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_timmean.nc', 
     'spco2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_timmean.nc',
-    'spco2_MIROC-ES2L_hist_1988-2014_1deg_IO_timmean.nc', #MIROC-ES2L
+    'spco2_MIROC-ES2L_hist_1988-2014_1deg_IO_timmean.nc', 
     'spco2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_timmean.nc',
     'spco2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_timmean.nc',
     'spco2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_timmean.nc',
-    'spco2nat_NorESM2-LM_hist_1988-2014_1deg_IO_timmean.nc', #NORESM2-LM, spco2nat?
+   # 'spco2nat_NorESM2-LM_hist_1988-2014_1deg_IO_timmean.nc', #NORESM2-LM, spco2nat?
     'spco2_NorESM2-MM_hist_1988-2014_1deg_IO_timmean.nc',
-    'spco2_UKESM1-0-LL_hist_1988-2014_1deg_IO_timmean.nc'#UKESM1-0-LL
+    'spco2_UKESM1-0-LL_hist_1988-2014_1deg_IO_timmean.nc'
     
 ]
 
@@ -53,7 +53,7 @@ labels = [
     'MPI-ESM-1-2-HAM',
     'MPI-ESM1-2-HR',
     'MPI-ESM1-2-LR',
-    'NorESM2-LM',
+    #'NorESM2-LM',
     'NorESM2-MM',
     'UKESM1-0-LL'
 ]
@@ -82,16 +82,13 @@ fig, axes = plt.subplots(
 
 axes = axes.flatten()
 
-
 for i in range(nplots):
-
     ax = axes[i]
     filename = files[i]
 
     ds = xr.open_dataset(data_path + filename, decode_times=False)
     spco2 = ds['spco2']
 
-    
     plot = spco2.plot(
         ax=ax,
         cmap=cmap,
@@ -121,7 +118,6 @@ for i in range(nplots):
 
 for j in range(nplots, len(axes)):
     fig.delaxes(axes[j])
-
 
 cax = fig.add_axes([0.92, 0.20, 0.015, 0.60])
 cbar = plt.colorbar(plot, cax=cax, ticks=levels, extend="both")
