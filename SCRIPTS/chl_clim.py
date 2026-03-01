@@ -16,20 +16,20 @@ files = [
     'chl_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'chl_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc', #CNRM-ESM2-1
+    'chl_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc', 
     'chl_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
     #'chl_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc', #IITM-ESM
     'chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'chl_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc', #MIROC-ES2L
+    'chl_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc', 
     'chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc',
     'chl_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'chl_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc' #UKESM1-0-LL
+    'chl_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc' 
 ]
 
 
