@@ -50,7 +50,7 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/o
             $opath/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/o2os_NorESM2-LM_*surf.nc \
-            $opath/o2os_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
+            $opath/o2_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/o2_NorESM2-MM_*surf.nc \
             $opath/o2_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
