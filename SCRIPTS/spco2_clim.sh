@@ -66,5 +66,5 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipat
 $CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2_UKESM1-0-LL_*.nc \
          $opath/spco2_UKESM1-0-LL_hist_1988-2014_1deg_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2nat_NorESM2-LM_*.nc \
-         $opath/spco2nat_NorESM2-LM_hist_1988-2014_1deg_IO_timmean.nc
+#$CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2nat_NorESM2-LM_*.nc \
+#         $opath/spco2nat_NorESM2-LM_hist_1988-2014_1deg_IO_timmean.nc
