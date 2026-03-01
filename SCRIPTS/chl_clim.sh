@@ -30,7 +30,8 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/ch
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CMCC-ESM2_*surf.nc \
        $opath/chl_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CNRM-ESM2-1_*surf.nc \
+#CNRM-ESM2-1 has unit kg/m^3 but seems to be wrong, as values are reaching 224mg/m^3, so multiply by 1e6, giving value 0.274 mg/m^3
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1e3 -timmean -selyear,1988/2014 $ipath/chl/chl_CNRM-ESM2-1_*surf.nc \
        $opath/chl_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_GFDL-CM4_*surf.nc \
