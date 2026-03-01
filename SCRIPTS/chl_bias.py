@@ -16,20 +16,20 @@ files = [
     'chl_CESM2-WACCM_bias.nc',
     'chl_CESM2-WACCM-FV2_bias.nc',
     'chl_CMCC-ESM2_bias.nc',
-    'chl_CMCC-ESM2_bias.nc', #CNRM-ESM2-1
+    'chl_CNRM-ESM2-1_bias.nc',
     'chl_GFDL-CM4_bias.nc',
     'chl_GFDL-ESM4_bias.nc',
-    'chl_GFDL-ESM4_bias.nc', #IITM-ESM
+    #'chl_GFDL-ESM4_bias.nc', #IITM-ESM
     'chl_IPSL-CM5A2-INCA_bias.nc',
     'chl_IPSL-CM6A-LR_bias.nc',
     'chl_IPSL-CM6A-LR-INCA_bias.nc',
-    'chl_IPSL-CM6A-LR-INCA_bias.nc', #MIROC-ES2L
+    'chl_MIROC-ES2L_bias.nc', 
     'chl_MPI-ESM-1-2-HAM_bias.nc',
     'chl_MPI-ESM1-2-HR_bias.nc',
     'chl_MPI-ESM1-2-LR_bias.nc',
     'chl_NorESM2-LM_bias.nc',
     'chl_NorESM2-MM_bias.nc',
-    'chl_NorESM2-MM_bias.nc' #UKESM1-0-LL
+    'chl_UKESM1-0-LL_bias.nc' 
 ]
 
 labels = [
@@ -44,7 +44,7 @@ labels = [
     'CNRM-ESM2-1',
     'GFDL-CM4',
     'GFDL-ESM4',
-    'IITM-ESM',
+   # 'IITM-ESM',
     'IPSL-CM5A2-INCA',
     'IPSL-CM6A-LR',
     'IPSL-CM6A-LR-INCA',
@@ -57,15 +57,17 @@ labels = [
     'UKESM1-0-LL'
 ]
 
-levels = [-0.8, -0.6, -0.4, -0.2, -0.1, 0,
-           0.1, 0.2, 0.4, 0.6, 0.8]
+levels = [-0.5, -0.4, -0.3, -0.2, -0.1, 0,
+           0.1, 0.2, 0.3, 0.4, 0.5]
 
 colors = [
-    "#08306B", "#2171B5", "#6BAED6", "#C6DBEF", "#DEEBF7", "#FFFFFF",
+    "#2171B5", "#6BAED6", "#C6DBEF", "#DEEBF7", "#FFFFFF", "#FFFFFF",
     "#FEE0D2", "#FC9272", "#FB6A4A", "#CB181D"
 ]
 
 cmap = ListedColormap(colors)
+cmap.set_under("#041C4A")   # darker blue for values < -2.0
+cmap.set_over("#67000D")    # darker red for values > 2.0
 norm = BoundaryNorm(levels, cmap.N)
 
 nplots = len(files)
@@ -85,7 +87,6 @@ latitude_ticks  = [-30, -15, 0, 15, 30]
 longitude_ticks = [30, 60, 90, 120]
 
 for i in range(nplots):
-
     ax = axes[i]
     filename = files[i]
 
@@ -95,8 +96,6 @@ for i in range(nplots):
     lon=slice(30, 120),
     lat=slice(-30, 30)
     )
-
-
     
     lon = (bias['lon'] + 180) % 360 - 180
     bias = bias.assign_coords(lon=lon).sortby('lon')
@@ -129,7 +128,6 @@ for i in range(nplots):
     ax.set_xlabel('')
     ax.set_ylabel('')
 
-
 for j in range(nplots, len(axes)):
     fig.delaxes(axes[j])
 
@@ -151,5 +149,5 @@ plt.suptitle('Chlorophyll Bias for Indian Ocean (Model − Observation)', fontsi
 
 #plt.tight_layout(rect=[0, 0, 0.9, 0.93])
 #plt.subplots_adjust(wspace=0.15, hspace=0.25)
-plt.savefig(fig_path + 'chl_cmip6_bias.png', dpi=300)
+plt.savefig(fig_path + 'chl bias IO.png', dpi=300)
 plt.show()
