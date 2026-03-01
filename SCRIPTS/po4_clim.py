@@ -5,34 +5,32 @@ import cartopy.crs as ccrs
 import cartopy.feature as cfeature
 
 data_path = '../data/climatology/po4/'
-fig_path  = '../figs/new/'
+fig_path  = '../figs/'
 
 files = [
-
-    'po4_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_CESM2-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc', 
-    'po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc', #CNRM-ESM2-1
-    'po4_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    #'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc', #IITM-ESM
-    'po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc', #MIROC-ES2L
-    'po4_MPI-ESM-1-2-HAM_hist_11988-2014_1deg_surf_IO_timmean.nc',
-    'po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4os_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc', #NorESM2-LM
-    'po4_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'po4_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc' #UKESM1-0-LL
+    'po4_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_CESM2_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_CESM2-FV2_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_CESM2-WACCM_hist_1988-2014_1deg_surf_timmean.nc', 
+    'po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_CMCC-ESM2_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_CNRM-ESM2-1_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_GFDL-CM4_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc',
+    #'po4_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc', #IITM-ESM
+    'po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_MIROC-ES2L_hist_1988-2014_1deg_surf_timmean.nc', 
+    'po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_NorESM2-LM_hist_1988-2014_1deg_surf_timmean.nc', 
+    'po4_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc',
+    'po4_UKESM1-0-LL_hist_1988-2014_1deg_surf_timmean.nc' 
 ]
 
 labels = [
-
     'ACCESS-ESM1-5',
     'CESM2',
     'CESM2-FV2',
@@ -55,7 +53,6 @@ labels = [
     'UKESM1-0-LL'
 ]
 
-#bounds = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]
 bounds = [0.08, 0.16, 0.24, 0.32, 0.40, 0.48, 0.56, 0.64, 0.72, 0.80]
 
 colors = [
@@ -85,14 +82,12 @@ axes = axes.flatten()
 
 
 for i in range(nplots):
-
     ax = axes[i]
     filename = files[i]
 
     ds = xr.open_dataset(data_path + filename, decode_times=False)
     po4 = ds['po4']
 
-    
     plot = po4.plot(
         ax=ax,
         cmap=cmap,
@@ -100,7 +95,6 @@ for i in range(nplots):
         add_colorbar=False,
         transform=ccrs.PlateCarree()
     )
-
 
     ax.add_feature(cfeature.COASTLINE, linewidth=0.8)
     ax.add_feature(cfeature.LAND, facecolor='lightgrey')
@@ -136,3 +130,4 @@ plt.suptitle(
 plt.tight_layout(rect=[0, 0, 0.9, 0.93])
 plt.savefig(fig_path + 'po4_clim.png', dpi=300)
 plt.show()
+
