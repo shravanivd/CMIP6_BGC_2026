@@ -8,29 +8,27 @@ data_path = '../data/climatology/o2/'
 fig_path  = '../figs/'
 
 files = [
-
-    'o2_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_CanESM5_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_CanESM5-1_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc',#CNRM-ESM2-1
-    'o2_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'o2_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_CanESM5_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_CanESM5-1_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_CMCC-ESM2_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_CNRM-ESM2-1_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_GFDL-CM4_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc',
     #'o2_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc',#IITM-ESM
-    'o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc',#MIROC-ES2L
-    'o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2os_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc',#NorESM2-LM
-    'o2_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc',
-    'o2_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc'#UKESM1-0-LL
+    'o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_MIROC-ES2L_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_NorESM2-LM_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc',
+    'o2_UKESM1-0-LL_hist_1988-2014_1deg_surf_timmean.nc'
 ]
 
 labels = [
-
     'ACCESS-ESM1-5',
     'CanESM5',
     'CanESM5-1',
@@ -38,7 +36,7 @@ labels = [
     'CNRM-ESM2-1',
     'GFDL-CM4',
     'GFDL-ESM4',
-    #'IITM-ESM',
+   #'IITM-ESM',
     'IPSL-CM5A2-INCA',
     'IPSL-CM6A-LR',
     'IPSL-CM6A-LR-INCA',
@@ -78,16 +76,13 @@ fig, axes = plt.subplots(
 
 axes = axes.flatten()
 
-
 for i in range(nplots):
-
     ax = axes[i]
     filename = files[i]
 
     ds = xr.open_dataset(data_path + filename, decode_times=False)
     o2 = ds['o2']
 
-    
     plot = o2.plot(
         ax=ax,
         cmap=cmap,
@@ -95,7 +90,6 @@ for i in range(nplots):
         add_colorbar=False,
         transform=ccrs.PlateCarree()
     )
-
 
     ax.add_feature(cfeature.COASTLINE, linewidth=0.8)
     ax.add_feature(cfeature.LAND, facecolor='lightgrey')
@@ -118,7 +112,6 @@ for i in range(nplots):
 for j in range(nplots, len(axes)):
     fig.delaxes(axes[j])
 
-
 cax = fig.add_axes([0.92, 0.20, 0.015, 0.60])
 cbar = plt.colorbar(plot, cax=cax, ticks=bounds)
 cbar.set_label('Oxygen (mmol m$^{-3}$)', fontsize=12)
@@ -129,5 +122,5 @@ plt.suptitle(
 )
 
 plt.tight_layout(rect=[0, 0, 0.9, 0.93])
-plt.savefig(fig_path + 'o2_clim.png', dpi=300)
+plt.savefig(fig_path + 'o2_clim_IO.png', dpi=300)
 plt.show()
