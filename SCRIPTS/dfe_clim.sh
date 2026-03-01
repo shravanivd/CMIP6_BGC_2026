@@ -8,7 +8,7 @@ opath="../data/climatology/dfe"
 
 #CanESM5 and CanESM5-1 absent
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfeos_ACCESS-ESM1-5_*surf.nc \
-       $opath/dfeos_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc
+       $opath/dfe_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_CESM2_*surf.nc \
         $opath/dfe_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
@@ -59,7 +59,7 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/d
           $opath/dfe_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfeos_NorESM2-LM_*.nc \
-          $opath/dfeos_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
+          $opath/dfe_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1000 -timmean -selyear,1988/2014 $ipath/dfe_UKESM1-0-LL_*surf.nc \
           $opath/dfe_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc
