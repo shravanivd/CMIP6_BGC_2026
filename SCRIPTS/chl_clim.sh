@@ -15,16 +15,16 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/ch
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CanESM5-1_*surf.nc \
        $opath/chl_CanESM5-1_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2_*surf.nc \
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1e8 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2_*surf.nc \
        $opath/chl_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-FV2_*surf.nc \
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1e8 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-FV2_*surf.nc \
        $opath/chl_CESM2-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-WACCM_*surf.nc \
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1e8 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-WACCM_*surf.nc \
        $opath/chl_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-WACCM-FV2_*surf.nc \
+$CDO -sellonlatbox,30,120,-30,30 -mulc,1e8 -timmean -selyear,1988/2014 $ipath/chl/chl_CESM2-WACCM-FV2_*surf.nc \
        $opath/chl_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,1e6 -timmean -selyear,1988/2014 $ipath/chl/chl_CMCC-ESM2_*surf.nc \
