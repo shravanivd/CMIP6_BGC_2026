@@ -4,7 +4,7 @@ set -xe
 CDO="cdo -O -P 8"
 
 ipath="../../../Nitrate/clean/"
-opath="../../data/seasonal_cycle/Nitrate/AS_monclim"
+opath="../../data/seasonal_cycle/Nitrate/AS_mon_ts"
 
 $CDO -fldmean -mulc,1000 -ymonmean -sellonlatbox,45,76,5,25 -selyear,1988/2014 $ipath/no3_ACCESS-ESM1-5_*surf.nc \
       $opath/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_AS_mon_ts.nc
