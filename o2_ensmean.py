@@ -43,12 +43,10 @@ axes = axes.flatten()
 
 for i, filepath in enumerate(files):
     ax = axes[i]
-    filename = files[i]
 
     ds = xr.open_dataset(filepath, decode_times=False)
     o2 = ds['o2']
     
-   
     plot = o2.plot(
            ax=ax,
            cmap=cmap,
@@ -74,11 +72,11 @@ for i, filepath in enumerate(files):
     ax.set_xlabel('')
     ax.set_ylabel('')
 
+nplots = len(files)
 
 for j in range(nplots, len(axes)):
     fig.delaxes(axes[j])
-
-
+    
 cax = fig.add_axes([0.92, 0.22, 0.015, 0.56])
 cbar = plt.colorbar(plot, cax=cax, ticks=bounds)
 cbar.set_label('Oxygen (mmol m$^{-3}$)')
