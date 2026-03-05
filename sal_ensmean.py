@@ -56,7 +56,6 @@ axes = axes.flatten()
 
 for i, filepath in enumerate(files):
     ax = axes[i]
-    filename = files[i]
 
     ds = xr.open_dataset(filepath, decode_times=False)
     sal = ds['so']
