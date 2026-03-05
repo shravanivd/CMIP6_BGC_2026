@@ -49,14 +49,14 @@ $opath/ph_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc
 $CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 $ipath/ph_MPI-ESM1-2-HR_*surf.nc \
 $opath/ph_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 ipath/ph_MPI-ESM1-2-LR_*surf.nc \
-opath/ph_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 $ipath/ph_MPI-ESM1-2-LR_*surf.nc \
+$opath/ph_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 ipath/ph_NorESM2-MM_*surf.nc \
-opath/ph_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 $ipath/ph_NorESM2-MM_*surf.nc \
+$opath/ph_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 ipath/ph_NorESM2-LM_*surf.nc \
-opath/ph_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 $ipath/ph_NorESM2-LM_*surf.nc \
+$opath/ph_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc
 
-$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 ipath/ph_UKESM1-0-LL_*surf.nc \
-opath/ph_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc
+$CDO -sellonlatbox,30,120,-30,30 -timmean -selyear,1988/2014 $ipath/ph_UKESM1-0-LL_*surf.nc \
+$opath/ph_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc
