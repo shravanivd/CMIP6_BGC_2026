@@ -45,7 +45,6 @@ axes = axes.flatten()
 
 for i, filepath in enumerate(files):
     ax = axes[i]
-    filename = files[i]
 
     ds = xr.open_dataset(data_path + filename, decode_times=False)
     no3 = ds['no3']
@@ -74,11 +73,12 @@ for i, filepath in enumerate(files):
     ax.set_title(labels[i], fontsize=11)
     ax.set_xlabel('')
     ax.set_ylabel('')
-
+    
+nplots = len(files)
 
 for j in range(nplots, len(axes)):
     fig.delaxes(axes[j])
-
+    
 cax = fig.add_axes([0.92, 0.22, 0.015, 0.56])
 cbar = plt.colorbar(plot, cax=cax, ticks=bounds)
 cbar.set_label('Nitrate (mmol m$^{-3}$)')
