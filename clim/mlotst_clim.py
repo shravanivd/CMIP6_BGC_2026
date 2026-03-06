@@ -8,27 +8,27 @@ data_path = '../data/climatology/mlotst/'
 fig_path  = '../figs/'
 
 files = [
-    'mlotst_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CanESM5_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CanESM5-1_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CESM2_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CESM2-FV2_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CESM2-WACCM_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CMCC-ESM2_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_CNRM-ESM2-1_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_GFDL-CM4_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_GFDL-ESM4_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_timmean.nc',
-    #'mlotst_MIROC-ES2L_hist_1988-2014_1deg_surf_timmean.nc', #to compute
-    'mlotst_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_timmean.nc',
-    #'mlotst_NorESM2-LM_hist_1988-2014_1deg_surf_timmean.nc', # to compute
-    'mlotst_NorESM2-MM_hist_1988-2014_1deg_surf_timmean.nc',
-    'mlotst_UKESM1-0-LL_hist_1988-2014_1deg_surf_timmean.nc'
+    'mlotst_ACCESS-ESM1-5_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CanESM5_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CanESM5-1_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CESM2-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CESM2-WACCM_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CESM2-WACCM-FV2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CMCC-ESM2_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_CNRM-ESM2-1_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_GFDL-CM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_GFDL-ESM4_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_IPSL-CM5A2-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_IPSL-CM6A-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    #'mlotst_MIROC-ES2L_hist_1988-2014_1deg_surf_IO_timmean.nc', #to compute
+    'mlotst_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_MPI-ESM1-2-HR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_MPI-ESM1-2-LR_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    #'mlotst_NorESM2-LM_hist_1988-2014_1deg_surf_IO_timmean.nc', # to compute
+    'mlotst_NorESM2-MM_hist_1988-2014_1deg_surf_IO_timmean.nc',
+    'mlotst_UKESM1-0-LL_hist_1988-2014_1deg_surf_IO_timmean.nc'
 ]
 
 labels = [
