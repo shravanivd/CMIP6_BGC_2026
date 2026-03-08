@@ -6,9 +6,8 @@ CDO="cdo -O -P 8"
 ipath="../../clean/spco2"
 opath="../data/climatology/spco2"
 
-#NorESM2-LM has spco2nat which is not with me
-#IPSL-CM5A2-INCA has no spco2 var
 
+# multiplied by spco2 to convert Pascal to uatm
 $CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2_ACCESS-ESM1-5_*.nc \
          $opath/spco2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_timmean.nc
 
@@ -65,6 +64,3 @@ $CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipat
 
 $CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2_UKESM1-0-LL_*.nc \
          $opath/spco2_UKESM1-0-LL_hist_1988-2014_1deg_IO_timmean.nc
-
-#$CDO -sellonlatbox,30,120,-30,30 -mulc,9.86923 -timmean -selyear,1988/2014 $ipath/spco2nat_NorESM2-LM_*.nc \
-#         $opath/spco2nat_NorESM2-LM_hist_1988-2014_1deg_IO_timmean.nc
