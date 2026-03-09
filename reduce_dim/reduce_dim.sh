@@ -157,55 +157,234 @@ $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e3 -selvar,chl -selyear,1988/2014 -
      $ipath/chl/clean/chl_CNRM-ESM2-1_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO_ON.nc 
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_CNRM-ESM2-1_hist_1988-2014_1deg_IO_MAM.nc
+
 
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_GFDL-CM4_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_GFDL-CM4_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_GFDL-ESM4_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_GFDL-ESM4_hist_1988-2014_1deg_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e3 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_IPSL-CM5A2-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e3 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_IPSL-CM6A-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e3 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_MIROC-ES2L_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MIROC-ES2L_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_MPI-ESM-1-2-HAM_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_MAM.nc
+
+                     
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_MPI-ESM1-2-HR_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_MAM.nc
+
+                     
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_MPI-ESM1-2-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/chl/reduce_dim/chl_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_NorESM2-LM_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-LM_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_NorESM2-MM_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_NorESM2-MM_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1e6 -selvar,chl -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/chl/clean/chl_UKESM1-0-LL_hist_1950-2014_1deg_surf.nc \
      $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/chl/reduce_dim/chl_UKESM1-0-LL_hist_1988-2014_1deg_IO_MAM.nc
+
 
 
 
@@ -214,69 +393,306 @@ $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -
      $ipath/DO/clean/o2_ACCESS-ESM1-5_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_MAM.nc
+
+                     
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_CanESM5_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_CanESM5-1_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CanESM5-1_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_CMCC-ESM2_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CMCC-ESM2_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_CNRM-ESM2-1_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_CNRM-ESM2-1_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_GFDL-CM4_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_GFDL-CM4_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_GFDL-ESM4_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_GFDL-ESM4_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_IPSL-CM5A2-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_IPSL-CM6A-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_MIROC-ES2L_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MIROC-ES2L_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_MPI-ESM-1-2-HAM_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_MPI-ESM1-2-HR_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_MPI-ESM1-2-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2os_NorESM2-LM_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_NorESM2-LM_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_NorESM2-MM_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_NorESM2-MM_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,o2 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/DO/clean/o2_UKESM1-0-LL_hist_1950-2014_1deg_surf.nc \
      $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                    $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                   $ipath/DO/reduce_dim/o2_UKESM1-0-LL_hist_1988-2014_1deg_IO_MAM.nc
+
 
 
 
@@ -345,160 +761,704 @@ $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 
      $ipath/Nitrate/clean/no3_ACCESS-ESM1-5_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Nitrate/reduce_dim/no3_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_MAM.nc
+                     
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CanESM5_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CanESM5_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CanESM5-1_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CanESM5-1_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CESM2_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CESM2-FV2_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-FV2_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CESM2-WACCM_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CESM2-WACCM-FV2_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CMCC-ESM2_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CMCC-ESM2_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_CNRM-ESM2-1_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_CNRM-ESM2-1_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_GFDL-ESM4_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_GFDL-ESM4_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_IPSL-CM5A2-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_IPSL-CM6A-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_MIROC-ES2L_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MIROC-ES2L_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_MPI-ESM-1-2-HAM_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_MPI-ESM1-2-HR_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_MPI-ESM1-2-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3os_NorESM2-LM_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_NorESM2-LM_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_NorESM2-MM_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_NorESM2-MM_hist_1988-2014_1deg_IO_MAM.nc
+
+                   
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,no3 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Nitrate/clean/no3_UKESM1-0-LL_hist_1950-2014_1deg_surf.nc \
      $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO_JJAS.nc
 
+$CDO -selmon,10,11 $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Nitrate/reduce_dim/no3_UKESM1-0-LL_hist_1988-2014_1deg_IO_MAM.nc
+
+
+                   
 
 # For Phosphate
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_ACCESS-ESM1-5_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_ACCESS-ESM1-5_hist_1988-2014_1deg_IO_MAM.nc
+
+                     
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CESM2_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CESM2-FV2_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2-FV2_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CESM2-WACCM_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CESM2-WACCM-FV2_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CESM2-WACCM-FV2_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CMCC-ESM2_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CMCC-ESM2_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_CNRM-ESM2-1_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_CNRM-ESM2-1_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_GFDL-CM4_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_GFDL-CM4_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_GFDL-ESM4_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_GFDL-ESM4_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_IPSL-CM5A2-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM5A2-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_IPSL-CM6A-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                  $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_IPSL-CM6A-LR-INCA_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_IPSL-CM6A-LR-INCA_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_MIROC-ES2L_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                  $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_MIROC-ES2L_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_MPI-ESM-1-2-HAM_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO.nc \
+                  $ipath/Phosphate/reduce_dim/po4_MPI-ESM-1-2-HAM_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_MPI-ESM1-2-HR_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-HR_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_MPI-ESM1-2-LR_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_MPI-ESM1-2-LR_hist_1988-2014_1deg_IO_MAM.nc
+
+
 
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4os_NorESM2-LM_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_NorESM2-LM_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_NorESM2-MM_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO.nc
 
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_NorESM2-MM_hist_1988-2014_1deg_IO_MAM.nc
+
+
+
 $CDO -b F32 --reduce_dim -sellevidx,1 -mulc,1000 -selvar,po4 -selyear,1988/2014 -sellonlatbox,30,120,-30,30 \
      $ipath/Phosphate/clean/po4_UKESM1-0-LL_hist_1950-2014_1deg_surf.nc \
      $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc
+
+$CDO -selmon,6,7,8,9 $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO_JJAS.nc
+
+$CDO -selmon,10,11 $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                   $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO_ON.nc
+
+$CDO -selmon,12,1,2 $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                     $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO_DJF.nc
+
+$CDO -selmon,3,4,5 $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO.nc \
+                    $ipath/Phosphate/reduce_dim/po4_UKESM1-0-LL_hist_1988-2014_1deg_IO_MAM.nc
+
 
 
 
