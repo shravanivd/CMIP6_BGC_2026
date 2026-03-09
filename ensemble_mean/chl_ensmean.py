@@ -26,14 +26,22 @@ colors = [
     "#FDE725", "#F6B800", "#EE5A00", "#A80000", "#5A0000"
 ]
 
-bounds_bias = [ ]
-
-colors_bias = [ ]
-
 cmap = mcolors.ListedColormap(colors)
 norm = mcolors.BoundaryNorm(bounds, cmap.N, extend='max')
 
-ncols = 2
+
+bounds_bias = [-0.5, -0.4, -0.3, -0.2, -0.1, 0,
+           0.1, 0.2, 0.3, 0.4, 0.5]
+
+colors_bias = [
+    "#2171B5", "#6BAED6", "#C6DBEF", "#DEEBF7", "#FFFFFF", "#FFFFFF",
+    "#FEE0D2", "#FC9272", "#FB6A4A", "#CB181D"
+]
+
+cmap_bias = mcolors.ListedColormap(colors_bias)
+norm_bias = mcolors.BoundaryNorm(bounds_bias, cmap_bias.N, extend='both')
+
+ncols = 3
 nrows = 1
 
 latitude_ticks  = [-30, -15, 0, 15, 30]
@@ -46,25 +54,44 @@ fig, axes = plt.subplots(
     subplot_kw={'projection': ccrs.PlateCarree()}
 )
 
-
 axes = axes.flatten()
 
+ds_obs = xr.open_dataset(data_path_obs, decode_times=False)
+chl_obs = ds_obs['chl']
 
-for i, filepath in enumerate(files):
-    ax = axes[i]
+plot = chl_obs.plot(
+    ax=axes[0],
+    cmap=cmap,
+    norm=norm,
+    add_colorbar=False,
+    transform=ccrs.PlateCarree()
+)
 
-    ds = xr.open_dataset(filepath, decode_times=False)
-    chl = ds['chl']
-    
-   
-    plot = chl.plot(
-           ax=ax,
-           cmap=cmap,
-           norm=norm,
-           add_colorbar=False,
-           transform=ccrs.PlateCarree()
-           )
 
+ds_esm = xr.open_dataset(data_path_esm, decode_times=False)
+chl_esm = ds_esm['chl']
+
+plot = chl_esm.plot(
+    ax=axes[1],
+    cmap=cmap,
+    norm=norm,
+    add_colorbar=False,
+    transform=ccrs.PlateCarree()
+)
+
+
+ds_bias = xr.open_dataset(data_path_bias, decode_times=False)
+chl_bias = ds_bias['chl']
+
+plot_bias = chl_bias.plot(
+    ax=axes[2],
+    cmap=cmap_bias,
+    norm=norm_bias,
+    add_colorbar=False,
+    transform=ccrs.PlateCarree()
+)
+
+for i, ax in enumerate(axes):
     ax.add_feature(cfeature.COASTLINE, linewidth=0.8)
     ax.add_feature(cfeature.LAND, facecolor='lightgrey')
 
@@ -83,12 +110,28 @@ for i, filepath in enumerate(files):
     ax.set_ylabel('')
 
 
-cax = fig.add_axes([0.92, 0.22, 0.015, 0.56])
-cbar = plt.colorbar(plot, cax=cax, ticks=bounds)
-cbar.set_label('Chlorophyll (mg m$^{-3}$)')
+cax_left = fig.add_axes([0.05,0.22,0.015,0.56])
+
+cbar_left = plt.colorbar(
+    plot,
+    cax=cax_left,
+    ticks=bounds
+)
+
+cbar_left.set_label('Chlorophyll (mg m$^{-3}$)')
 
 
-plt.tight_layout(rect=[0, 0, 0.9, 0.93])
+cax_right = fig.add_axes([0.92,0.22,0.015,0.56])
 
+cbar_right = plt.colorbar(
+    plot_bias,
+    cax=cax_right,
+    ticks=bounds_bias
+)
+
+cbar_right.set_label('Bias (mg m$^{-3}$)')
+
+
+plt.tight_layout(rect=[0, 0, 0.9, 0.93]
 plt.savefig(fig_path + 'chl_ensmean_occi.png', dpi=300)
 plt.show()
