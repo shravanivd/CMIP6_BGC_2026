@@ -7,8 +7,7 @@ esm_path="/mnt/f/cmip6_bgc_2025/data/chl"
 obs_path="/mnt/f/observations_bgc/chl/CCI_v6.0-mon_global_1998-2024_1deg_IO.nc"
 opath="/mnt/f/cmip6_bgc_2025/analysis/data/cc/chl"
 
-$CDO -timcor \
-      $esm_path/chl_ACCESS-ESM1-5_hist_1988-2014_1deg_IO.nc \
+$CDO -timcor -mulc,1e6 -sellonlatbox,30,120,-30,30 -selyear,1988/2014 $esm_path/chl_ACCESS-ESM1-5_*surf.nc \
       $obs_path \
       $opath/chl_ACCESS-ESM1-5_cc.nc
 
