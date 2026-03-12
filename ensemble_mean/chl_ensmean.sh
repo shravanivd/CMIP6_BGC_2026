@@ -22,10 +22,10 @@ $CDO ensmean \
   $ipath/chl_IPSL-CM6A-LR_*.nc \
  # $ipath/chl_IPSL-CM6A-LR-INCA_*.nc \
   $ipath/chl_MIROC-ES2L_*.nc \
-  $ipath/chl_MPI-ESM-1-2-HAM_*.nc \
+ # $ipath/chl_MPI-ESM-1-2-HAM_*.nc \
   $ipath/chl_MPI-ESM1-2-HR_*.nc \
 # $ipath/chl_MPI-ESM1-2-LR_*.nc \
-  $ipath/chl_NorESM2-LM_*.nc \
+#  $ipath/chl_NorESM2-LM_*.nc \
   $ipath/chl_NorESM2-MM_*.nc \
   $ipath/chl_UKESM1-0-LL_*.nc \
   $opath/chl_ensmean.nc      
